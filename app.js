@@ -1,1 +1,1 @@
-var app = angular.module('FrontendApp', []);
+var cde = angular.module('FrontendApp', ['CDELogin']);

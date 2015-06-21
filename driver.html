@@ -1,4 +1,6 @@
 <head>
+
+		<!-- JQuery -->
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>  
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
@@ -15,25 +17,14 @@
     <!-- Google API Client -->
     <script src="https://apis.google.com/js/client.js"></script>
     
-    <!-- CDE Stuff -->
-    <script src="app.js"></script>
-    <script src="main_controller.js"></script>
-
-    <script src="cde/cde_api_service.js"></script>
-    <script src="cde/cde_auth_service.js"></script>
-    <script src="cde/modules/cde_cache_service.js"></script>
-    <script src="cde/modules/cde_util_service.js"></script>
-    <script src="cde/modules/cde_write_service.js"></script>
-    <script src="cde/modules/login_service.js"></script>
-    <script src="cde/modules/start_container_service.js"></script>
-    <script src="cde/modules/google_wrapper_service.js"></script>
-    <script src="data/cde_path_service.js"></script>
+    <script src="dist/CDELogin.min.js"></script>
     
+    <script src="app.js"></script>
 </head >
 
-<body ng-app="FrontendApp" ng-controller="MainCtrl">
+<body ng-app="FrontendApp">
 
-   <nav>
+   <nav ng-controller="CDELoginCtrl" cde-login>
     <div class="nav-wrapper">
       <a href="#" class="brand-logo center">{{User.access_token}}</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
