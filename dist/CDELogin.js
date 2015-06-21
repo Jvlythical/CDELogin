@@ -14,16 +14,19 @@ app.directive('cdeLogin', ['CDEConstants', 'CDECache', function(CDEConstants, CD
 				},
 			});
 
-			scope.$on('oauth', function() {
+			scope.$on('oauth', function(data) {
 				console.log('OAuth');
+				console.log(data);
 			});
 
-			scope.$on('cauth', function() {
+			scope.$on('cauth', function(data) {
 				console.log('CAuth');
+				console.log(data);
 			});
 
-			scope.$on('cstart', function() {
+			scope.$on('cstart', function(data) {
 				console.log('CAuth');
+				console.log(data);
 			});
 
 		}
