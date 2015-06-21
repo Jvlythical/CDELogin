@@ -23,7 +23,7 @@ app.directive('cdeLogin', ['CDEConstants', 'CDECache', function(CDEConstants, CD
 			});
 
 			scope.$on('cstart', function(event, data) {
-				console.log('CAuth');
+				console.log('CStart');
 			});
 
 		}
