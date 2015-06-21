@@ -42,9 +42,7 @@ function(CDEWrite, CDEUtil, CDECache, CDEAuth) {
 		
 		CDEAuth.init(Scope);
 		
-		detectBrowser(false);
 		detectCType(Scope);
-		setResponsive(true);
 
 		Statuses.init = true;
 		
