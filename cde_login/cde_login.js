@@ -14,17 +14,17 @@ app.directive('cdeLogin', ['CDEConstants', 'CDECache', function(CDEConstants, CD
 				},
 			});
 
-			scope.$on('oauth', function(data) {
+			scope.$on('oauth', function(event, data) {
 				console.log('OAuth');
 				console.log(data);
 			});
 
-			scope.$on('cauth', function(data) {
+			scope.$on('cauth', function(event, data) {
 				console.log('CAuth');
 				console.log(data);
 			});
 
-			scope.$on('cstart', function(data) {
+			scope.$on('cstart', function(event, data) {
 				console.log('CAuth');
 				console.log(data);
 			});
